@@ -1,0 +1,6 @@
+com\zb\controller\QgGoodsController.class
+com\zb\service\QgGoodsService.class
+com\zb\mapper\QgGoodsMessageMapper.class
+com\zb\service\impl\QgGoodsServiceImpl.class
+com\zb\MyGoodsServerApp.class
+com\zb\mapper\QgGoodsMapper.class

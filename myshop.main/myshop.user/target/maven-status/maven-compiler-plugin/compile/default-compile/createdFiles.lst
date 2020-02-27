@@ -1,0 +1,6 @@
+com\zb\service\XcUserExtService.class
+com\zb\mapper\XcCompanyMapper.class
+com\zb\MyUserServerApp.class
+com\zb\service\impl\XcUserExtServiceImpl.class
+com\zb\controller\XcUserController.class
+com\zb\mapper\XcUserMapper.class

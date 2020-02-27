@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zb.mapper.TaskHisMapper">
+    <select id="findHisById" resultType="com.zb.entity.TaskHis">
+        select * from qg_task_his where id= #{id}
+    </select>
+    <insert id="insertHis" parameterType="com.zb.entity.TaskHis">
+        insert into qg_task_his values (#{id} ,now(),now(),now(),#{task_type} ,#{mq_exchange} ,#{mq_routingkey},#{request_body}  ,#{version} ,#{status} ,#{errormsg} )
+    </insert>
+</mapper>  

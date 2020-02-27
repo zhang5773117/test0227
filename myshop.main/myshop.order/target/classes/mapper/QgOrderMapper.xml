@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zb.mapper.QgOrderMapper">
+    <select id="findOrderByUser" resultType="com.zb.entity.QgOrders">
+        SELECT * FROM `qg_orders` WHERE user_id = #{uid}
+    </select>
+    <insert id="saveOrder" parameterType="com.zb.entity.QgOrders">
+        insert into qg_orders values (#{order_number} ,#{initial_price} ,#{price} ,now(),now(),#{status} ,#{user_id},#{details}  )
+    </insert>
+    <delete id="deleteOrder">
+        delete from qg_orders where order_number=#{oid}
+    </delete>
+
+    <update id="updateOrderStatus" parameterType="com.zb.entity.QgOrders">
+        update qg_orders set status = #{status}  where order_number = #{order_number}
+    </update>
+
+    <select id="findOrderByOrderNumber" resultType="com.zb.entity.QgOrders">
+        SELECT * FROM `qg_orders` WHERE order_number = #{orderNumber}
+    </select>
+</mapper>

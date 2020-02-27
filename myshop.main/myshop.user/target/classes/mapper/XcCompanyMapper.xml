@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zb.mapper.XcCompanyMapper">
+    <select id="getCompanyByUserId" resultType="com.zb.entity.Company">
+        SELECT * FROM xc_company c
+            INNER JOIN `xc_company_user` cu
+            ON c.`id` = cu.company_id AND user_id = #{userid}
+    </select>
+</mapper>  

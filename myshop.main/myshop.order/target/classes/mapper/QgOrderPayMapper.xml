@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zb.mapper.QgOrderPayMapper">
+    <insert id="addOrderPay" parameterType="com.zb.entity.QgOrderPay">
+        insert  into qg_orders_pay values (#{id} ,#{order_number} ,#{pay_number} ,#{status} )
+    </insert>
+</mapper>  

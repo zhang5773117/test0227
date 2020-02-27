@@ -1,0 +1,7 @@
+com\zb\mapper\TaskHisMapper.class
+com\zb\service\LearningService.class
+com\zb\mq\TaskMQ.class
+com\zb\service\impl\LearningServiceImpl.class
+com\zb\mapper\LearningMapper.class
+com\zb\config\RabbitConfig.class
+com\zb\LearningApp.class

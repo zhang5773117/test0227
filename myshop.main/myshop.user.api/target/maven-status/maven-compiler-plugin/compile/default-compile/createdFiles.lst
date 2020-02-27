@@ -1,0 +1,5 @@
+com\zb\entity\XcMenu.class
+com\zb\entity\XcUser.class
+com\zb\entity\XcUserExt.class
+com\zb\entity\Company.class
+com\zb\feign\XcUserFeginClient.class

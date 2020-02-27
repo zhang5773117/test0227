@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.common.api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.goods" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.goods.api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.goods2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.learning" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.learning.api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.order.api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/myshop.user.api" charset="UTF-8" />
+  </component>
+</project>

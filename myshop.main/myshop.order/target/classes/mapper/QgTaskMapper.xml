@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zb.mapper.QgTaskMapper">
+    <select id="findBeforOneMinuteTaskList" resultType="com.zb.entity.Task">
+        SELECT * FROM qg_task WHERE TIMESTAMPDIFF( MINUTE,update_time, NOW())>1
+    </select>
+    <select id="findTaskById" resultType="com.zb.entity.Task">
+         SELECT * FROM qg_task WHERE id =#{id}
+    </select>
+    <update id="updateTaskTime" >
+        update qg_task set update_time = now() where id = #{id}
+    </update>
+
+    <update id="updateTaskVersion">
+        update qg_task set version = version +1 where id =#{id}  and version =#{version}
+    </update>
+
+    <delete id="deleteTask">
+        delete from qg_task  where id=#{id}
+    </delete>
+</mapper>  

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zb.mapper.LearningMapper">
+    <select id="findLearningByUserAndCourese" resultType="com.zb.entity.Learning">
+        select * from qg_learning_course where user_id =#{userId}  and course_id =#{courseId}
+    </select>
+    <insert id="saveLearning" parameterType="com.zb.entity.Learning">
+          insert into qg_learning_course values
+            (#{id} ,#{course_id} ,#{user_id} ,#{charge} ,#{price} ,#{valid} ,#{start_time} ,#{end_time} ,#{status} )
+    </insert>
+    <update id="updateLearning" parameterType="com.zb.entity.Learning">
+        update qg_learning_course set start_time=#{start_time} ,end_time=#{end_time}  where id=#{id}
+    </update>
+</mapper>  

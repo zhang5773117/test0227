@@ -1,0 +1,5 @@
+com\zb\fegin\GoodsFeginClient.class
+com\zb\pojo\QgGoods.class
+com\zb\pojo\QgGoodsMessage.class
+com\zb\vo\GoodsVo.class
+com\zb\vo\MqMessage.class

@@ -1,0 +1,5 @@
+com\zb\entity\Task.class
+com\zb\feign\QgOrderFeignClient.class
+com\zb\entity\QgOrderPay.class
+com\zb\entity\QgOrders.class
+com\zb\entity\TaskHis.class
